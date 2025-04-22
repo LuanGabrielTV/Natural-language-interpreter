@@ -1,0 +1,1 @@
+invalid_alphabet_error = 'O{} caracter{} {} {} inválido{}.'
