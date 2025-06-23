@@ -1,4 +1,5 @@
 <stopwords>
+  <word>quer</word>
   <word>acerca</word>
   <word>agora</word>
   <word>algmas</word>
@@ -36,12 +37,12 @@
   <word>dizer</word>
   <word>dois</word>
   <word>dos</word>
-  <word>e</word>
-  <word>é</word>
+  <!-- <word>e</word> -->
+  <!-- <word>é</word> -->
   <word>ela</word>
   <word>ele</word>
   <word>eles</word>
-  <word>em</word>
+  <!-- <word>em</word> -->
   <word>enquanto</word>
   <word>então</word>
   <word>está</word>
@@ -62,7 +63,7 @@
   <word>fazia</word>
   <word>fez</word>
   <word>fim</word>
-  <word>foi</word>
+  <!-- <word>foi</word> -->
   <word>fora</word>
   <word>horas</word>
   <word>iniciar</word>
@@ -75,18 +76,18 @@
   <word>ligado</word>
   <word>maioria</word>
   <word>maiorias</word>
-  <word>mais</word>
+  <!-- <word>mais</word> -->
   <word>mas</word>
   <word>mesmo</word>
   <word>meu</word>
   <word>muito</word>
   <word>muitos</word>
   <word>não</word>
-  <word>nome</word>
+  <!-- <word>nome</word> -->
   <word>nós</word>
   <word>nosso</word>
   <word>novo</word>
-  <word>o</word>
+  <!-- <word>o</word> -->
   <word>onde</word>
   <word>os</word>
   <word>ou</word>
@@ -103,23 +104,23 @@
   <word>porque</word>
   <word>povo</word>
   <word>promeiro</word>
-  <word>qual</word>
+  <!-- <word>qual</word> -->
   <word>qualquer</word>
   <word>quando</word>
   <word>quê</word>
   <word>quem</word>
   <word>quieto</word>
   <word>saber</word>
-  <word>são</word>
+  <!-- <word>são</word> -->
   <word>sem</word>
   <word>ser</word>
   <word>seu</word>
   <word>somente</word>
   <word>tal</word>
   <word>também</word>
-  <word>tem</word>
+  <!-- <word>tem</word> -->
   <word>têm</word>
-  <word>tempo</word>
+  <!-- <word>tempo</word> -->
   <word>tenho</word>
   <word>tentar</word>
   <word>tentaram</word>
@@ -146,7 +147,7 @@
   <word>verdade</word>
   <word>verdadeiro</word>
   <word>você</word>
-  <word>a</word>
+  <!-- <word>a</word> -->
   <word>à</word>
   <word>adeus</word>
   <word>aí</word>
@@ -218,7 +219,7 @@
   <word>dúvida</word>
   <word>elas</word>
   <word>embora</word>
-  <word>entre</word>
+  <!-- <word>entre</word> -->
   <word>era</word>
   <word>és</word>
   <word>essa</word>
@@ -240,10 +241,10 @@
   <word>fazem</word>
   <word>fazemos</word>
   <word>fazes</word>
-  <word>final</word>
+  <!-- <word>final</word> -->
   <word>fomos</word>
   <word>for</word>
-  <word>foram</word>
+  <!-- <word>foram</word> -->
   <word>forma</word>
   <word>foste</word>
   <word>fostes</word>
@@ -252,7 +253,7 @@
   <word>grande</word>
   <word>grandes</word>
   <word>grupo</word>
-  <word>há</word>
+  <!-- <word>há</word> -->
   <word>hoje</word>
   <word>hora</word>
   <word>isso</word>
@@ -295,7 +296,7 @@
   <word>neste</word>
   <word>nestes</word>
   <word>nível</word>
-  <word>no</word>
+  <!-- <word>no</word> -->
   <word>noite</word>
   <word>nos</word>
   <word>nossa</word>
@@ -360,7 +361,7 @@
   <word>quarta</word>
   <word>quarto</word>
   <word>quatro</word>
-  <word>que</word>
+  <!-- <word>que</word> -->
   <word>quer</word>
   <word>quereis</word>
   <word>querem</word>
@@ -374,7 +375,7 @@
   <word>relação</word>
   <word>sabe</word>
   <word>sabem</word>
-  <word>se</word>
+  <!-- <word>se</word> -->
   <word>segunda</word>
   <word>segundo</word>
   <word>sei</word>
