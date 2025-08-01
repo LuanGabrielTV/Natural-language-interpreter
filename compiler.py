@@ -1,5 +1,6 @@
 from lexical import lexical
 from syntax import syntax
+from translator import start_translation
 
 global input_string
 input_string = ''
@@ -17,6 +18,7 @@ if __name__ == '__main__':
     while True:
         input_string = wait_for_input()
         if input_string.lower() == 'bye':
+            start_translation()
             break
 
         token_queue = lexical(input_string)

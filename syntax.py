@@ -1,6 +1,6 @@
 from symbol_table import add_symbol, print_table, get_symbol_table, set_symbol_table
 from lexical import lexical
-from grammar import perguntas, respostas
+from input_language_grammar import perguntas, respostas
 from utils import get_strings_similarity
 import re
 from errors import no_mobilized_rule_error, pending_rule_error
@@ -9,14 +9,13 @@ import copy
 global pending_answer
 pending_answer = []
 
-def add_symbol_in_table(type, identifier, instruction_index):
+def add_symbol_in_table(type, identifier, instruction_index, rule):
     
-    print(instruction_index)
-
     symbol = {
         "type": type,
         "identifier": identifier,
-        "occurrences": [instruction_index]
+        "occurrences": [instruction_index],
+        "rule": rule
     }
     
     add_symbol(symbol)
@@ -37,6 +36,8 @@ def fit_into_grammar(instruction_index):
         for j in range(min(len(copied_queue_list), len(mobilized_rule['content'].split()))):
             current_word = mobilized_rule['content'].split()[j]
             
+            # print(current_word)
+
             if current_word in mobilized_rule['info']:    
                 k = mobilized_rule['info'].index(current_word)
                 
@@ -50,9 +51,8 @@ def fit_into_grammar(instruction_index):
                     if not(bool(pattern.match(copied_queue_list[i]))):
                         pending_answer.append(respostas[mobilized_rule['followup'][k]])
                         print(mobilized_rule['complement'][k])
-                    
                     else:
-                        add_symbol_in_table(mobilized_rule['info'][k], copied_queue_list[i], instruction_index)
+                        add_symbol_in_table(mobilized_rule['info'][k], copied_queue_list[i], instruction_index, mobilized_rule)
                         
                         if len(pending_answer) != 0:
                             pending_answer.remove(respostas[mobilized_rule['followup'][k]])
@@ -83,7 +83,7 @@ def fit_into_grammar(instruction_index):
                         if len(pending_answer) != 0:
                             pending_answer.remove(mobilized_rule)
                       
-                        add_symbol_in_table(mobilized_rule['info'], copied_queue_list[j], instruction_index)
+                        add_symbol_in_table(mobilized_rule['info'], copied_queue_list[j], instruction_index, mobilized_rule)
             else:
                 pending_answer.append(mobilized_rule)
                 print(mobilized_rule['complement'])
